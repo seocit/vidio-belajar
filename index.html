@@ -2,14 +2,115 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link href="/src/style.css" rel="stylesheet" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>vidio-belajar</title>
+		<link rel="stylesheet" href="src/style.css" />
+		<title>vidio belajar | login</title>
 	</head>
 	<body>
-		<div id="app" class="text-center">
-      hello
-    </div>
+		<header
+			class="fixed top-0 right-0 left-0 flex justify-between items-center h-[80px] py-3 px-10.5 md:px-32 bg-white shadow-xl md:shadow-none"
+		>
+			<nav>
+				<a href="/">
+					<img
+						class="w-[144.77px] h-[22.56px] md:w-[193px] md:h-[30px]"
+						src="src/assets/Logo.png"
+						alt="vidio-belajar"
+					/>
+				</a>
+				<div></div>
+			</nav>
+		</header>
+
+		<main
+			class="flex px-5 py-16 md:py-30 justify-center items-center min-h-screen"
+		>
+			<div
+				class="w-147.5 min-h-154.25 flex flex-col items-center p-9 gap-4 bg-white border border-[#F1F1F1]"
+			>
+				<div class="flex flex-col items-center">
+					<h1 class="text-2xl md:text-[32px] text-[#222325] font-bold">
+						Masuk ke Akun
+					</h1>
+					<p class="text-sm text-center md:text-[16px] text-[#333333AD]">
+						Yuk, lanjutin belajarmu di videobelajar
+					</p>
+				</div>
+
+				<form action="src/register.html" class="flex flex-col gap-4 w-full mt-4">
+					<div class="flex flex-col width-full gap-2">
+						<label for="email" class="text-[#4A505C]"
+							>E-Mail <span class="text-red-500">*</span></label
+						>
+						<input
+							id="email"
+							type="email"
+							required
+							class="w-full h-12 px-3 border border-[#F1F1F1] rounded-md"
+						/>
+					</div>
+					<div class="flex flex-col width-full gap-2">
+						<label for="password" class="text-[#4A505C]"
+							>Kata Sandi <span class="text-red-500">*</span></label
+						>
+						<div class="relative">
+							<input
+								id="password"
+								type="password"
+								required
+								class="w-full h-12 px-3 border border-[#F1F1F1] rounded-md"
+							/>
+							<button
+								class="absolute right-3 top-1/2 transform -translate-y-1/2"
+								type="button"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									height="24px"
+									viewBox="0 -960 960 960"
+									width="24px"
+									fill="#6C717A"
+								>
+									<path
+										d="m644-428-58-58q9-47-27-88t-93-32l-58-58q17-8 34.5-12t37.5-4q75 0 127.5 52.5T660-500q0 20-4 37.5T644-428Zm128 126-58-56q38-29 67.5-63.5T832-500q-50-101-143.5-160.5T480-720q-29 0-57 4t-55 12l-62-62q41-17 84-25.5t90-8.5q151 0 269 83.5T920-500q-23 59-60.5 109.5T772-302Zm20 246L624-222q-35 11-70.5 16.5T480-200q-151 0-269-83.5T40-500q21-53 53-98.5t73-81.5L56-792l56-56 736 736-56 56ZM222-624q-29 26-53 57t-41 67q50 101 143.5 160.5T480-280q20 0 39-2.5t39-5.5l-36-38q-11 3-21 4.5t-21 1.5q-75 0-127.5-52.5T300-500q0-11 1.5-21t4.5-21l-84-82Zm319 93Zm-151 75Z"
+									/>
+								</svg>
+							</button>
+						</div>
+					</div>
+					<a href="" class="w-full text-end text-md text-[#4A505C]"
+						>Lupa Password?</a
+					>
+
+					<button class="w-[518] h-10.5 bg-[#3ECF4C] text-white f rounded-xl">
+						<a href="/src/beranda.html"></a>Masuk
+					</button>
+				</form>
+				<form action="/src/register.html" class="flex flex-col gap-4 w-full">
+					<button
+						class="w-[518] h-10.5 bg-[#E2FCD9CC] text-[#3ECF4C] rounded-xl"
+					>
+						Daftar
+					</button>
+				</form>
+
+				<div class="flex items-center gap-3 my-4">
+					<span class="h-px flex-1 bg-gray-300"></span>
+					<span class="text-sm text-gray-500">atau</span>
+					<span class="h-px flex-1 bg-gray-300"></span>
+				</div>
+
+				<button
+					class="flex justify-center items-center gap-3 w-full h-10.5 border border-[#F1F1F1] rounded-xl"
+				>
+					<img
+						class="w-4.2 h-5"
+						src="src/assets/google.png"
+						alt="google-icon"
+					/>
+					Masuk dengan Google
+				</button>
+			</div>
+		</main>
 	</body>
 </html>
