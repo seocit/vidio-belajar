@@ -7,49 +7,75 @@
 		<title>vidio belajar | beranda</title>
 	</head>
 	<body>
-		<header>
-			<nav>
+		<header
+			class="sticky top-0 flex justify-between h-20 py-3 px-10.5 md:px-32 bg-white shadow-xl md:shadow-none"
+		>
+			<nav class="w-full flex justify-between items-center">
 				<a href="/">
-					<img src="" alt="vidio-belajar" />
+					<img
+						class="w-[144.77px] h-[22.56px] md:w-48.25 md:h-7.5"
+						src="assets/Logo.png"
+						alt="vidio-belajar"
+					/>
 				</a>
-				<div>
-					<a href=""></a>
-					<a href="">
-						<img src="" alt="profile" />
-					</a>
+				<div class="flex gap-2">
+					<div class="hidden md:flex gap-6 items-center">
+						<a href="">Kategori</a>
+						<button>
+							<img src="assets/profile.png" alt="" class="w-11 h-11 rounded-2xl" />
+						</button>
+					</div>
+
+					<button class="block md:hidden items-center gap-2">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="size-6"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+							/>
+						</svg>
+					</button>
 				</div>
 			</nav>
 		</header>
 
-		<main>
-			<section class="hero">
-				<img src="" alt="" />
-				<div>
-					<h1>
+		<main class="flex flex-col py-7 px-5 md:py-16 md:px-30 gap-16">
+			<section class="flex flex-col bg-[url('assets/hero.jpg')] bg-cover bg-center  rounded-[10px]">
+				<div class="flex justify-center items-center flex-col gap-3 py-16 px-5 md:py-16 md:px-35 rounded-[10px] text-white bg-black/80">
+					<h1 class="text-center font-bold text-2xl md:text-5xl">
 						Revolusi Pembelajaran: Temukan Ilmu Baru melalui Platform Video
 						Interaktif!
 					</h1>
-					<p>
+					<p class="text-center my-4 md:text-[16px]">
 						Temukan ilmu baru yang menarik dan mendalam melalui koleksi video
 						pembelajaran berkualitas tinggi. Tidak hanya itu, Anda juga dapat
 						berpartisipasi dalam latihan interaktif yang akan meningkatkan
 						pemahaman Anda.
 					</p>
-					<button>Temukan Video Course untuk Dipelajari!</button>
+					<button class="bg-[#3ECF4C] w-79.29 rounded-xl py-2.5 px-6 text-white">Temukan Video Course untuk Dipelajari!</button>
 				</div>
 			</section>
 
 			<section class="collection">
-				<h1>Koleksi Video Pembelajaran Unggulan</h1>
-				<p>Jelajahi Dunia Pengetahuna Melalui Pilihan Kami!</p>
+                <div class="grid gap-2">
+                    <h3 class="text-[#222325] text-2xl font-bold md:text[64px] ">Koleksi Video <br class="md:hidden">Pembelajaran Unggulan</h3>
+                    <p class="text-[14px] text-[#333333AD]">Jelajahi Dunia Pengetahuan Melalui Pilihan Kami!</p>
+                </div>
 
-				<div>
-					<ul>
-						<li><a href="">Semua kelas</a></li>
-						<li><a href="">Pemasaran</a></li>
-						<li><a href="">Desain</a></li>
-						<li><a href="">Pengemabangan Diri</a></li>
-						<li><a href="">Bisnis</a></li>
+				<div class="my-6 overflow-hidden">
+					<ul class="flex gap-8">
+						<li class="whitespace-nowrap text-sm text-[#F64920]"><a href="">Semua kelas</a> <div class="h-2 w-2/3 rounded-xl bg-[#F64920] mt-4"></div></li>
+						<li class="whitespace-nowrap text-sm text-[#333333AD]"><a href="">Pemasaran</a></li>
+						<li class="whitespace-nowrap text-sm text-[#333333AD]"><a href="">Desain</a></li>
+						<li class="whitespace-nowrap text-sm text-[#333333AD]"><a href="">Pengemabangan Diri</a></li>
+						<li class="whitespace-nowrap text-sm text-[#333333AD]"><a href="">Bisnis</a></li>
 					</ul>
 				</div>
 
@@ -79,12 +105,15 @@
 			</section>
 
 			<section class="cta">
-				<img src="" alt="">
+				<img src="" alt="" />
 				<h3>NEWSLETTER</h3>
 				<h1>MAU BELAJAR LEBIH BANYAK?</h1>
-				<P>Daftarkan dirimu untuk mendapatkan informasi terbaru dan penawaran spesial dari program-program terbaik hariesok.id</P>
+				<p>
+					Daftarkan dirimu untuk mendapatkan informasi terbaru dan penawaran
+					spesial dari program-program terbaik hariesok.id
+				</p>
 				<form action="">
-					<input type="text" placeholder="Masukkan Emailmu">
+					<input type="text" placeholder="Masukkan Emailmu" />
 					<button>Subcribe</button>
 				</form>
 			</section>
@@ -93,21 +122,19 @@
 		<footer>
 			<!-- information-->
 			<div>
-				<img src="" alt="">
+				<img src="" alt="" />
 				<p>Gali Potensi Anda Melalui Pembelajaran Video di hariesok.id!</p>
 				<p>Jl. Usman Effendi No. 50 Lowokwaru, Malang</p>
 				<p>+62-877-7123-1234</p>
 			</div>
 
 			<!-- navigation with grids -->
-			<div>
-
-			</div>
+			<div></div>
 
 			<div>
 				<p>@2023 Gerobak Sayur All Rights Reserved.</p>
 				<div>
-					<img src="" alt="">
+					<img src="" alt="" />
 				</div>
 			</div>
 		</footer>
