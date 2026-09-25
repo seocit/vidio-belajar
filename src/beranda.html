@@ -22,7 +22,11 @@
 					<div class="hidden md:flex gap-6 items-center">
 						<a href="">Kategori</a>
 						<button>
-							<img src="assets/profile.png" alt="" class="w-11 h-11 rounded-2xl" />
+							<img
+								src="assets/profile.png"
+								alt=""
+								class="w-11 h-11 rounded-2xl"
+							/>
 						</button>
 					</div>
 
@@ -47,8 +51,12 @@
 		</header>
 
 		<main class="flex flex-col py-7 px-5 md:py-16 md:px-30 gap-16">
-			<section class="flex flex-col bg-[url('assets/hero.jpg')] bg-cover bg-center  rounded-[10px]">
-				<div class="flex justify-center items-center flex-col gap-3 py-16 px-5 md:py-16 md:px-35 rounded-[10px] text-white bg-black/80">
+			<section
+				class="flex flex-col bg-[url('assets/hero.jpg')] bg-cover bg-center rounded-[10px]"
+			>
+				<div
+					class="flex justify-center items-center flex-col gap-3 py-16 px-5 md:py-16 md:px-35 rounded-[10px] text-white bg-black/80"
+				>
 					<h1 class="text-center font-bold text-2xl md:text-5xl">
 						Revolusi Pembelajaran: Temukan Ilmu Baru melalui Platform Video
 						Interaktif!
@@ -59,46 +67,87 @@
 						berpartisipasi dalam latihan interaktif yang akan meningkatkan
 						pemahaman Anda.
 					</p>
-					<button class="bg-[#3ECF4C] w-79.29 rounded-xl py-2.5 px-6 text-white">Temukan Video Course untuk Dipelajari!</button>
+					<button
+						class="bg-[#3ECF4C] w-79.29 rounded-xl py-2.5 px-6 text-white"
+					>
+						Temukan Video Course untuk Dipelajari!
+					</button>
 				</div>
 			</section>
 
 			<section class="collection">
-                <div class="grid gap-2">
-                    <h3 class="text-[#222325] text-2xl font-bold md:text[64px] ">Koleksi Video <br class="md:hidden">Pembelajaran Unggulan</h3>
-                    <p class="text-[14px] text-[#333333AD]">Jelajahi Dunia Pengetahuan Melalui Pilihan Kami!</p>
-                </div>
+				<div class="grid gap-2">
+					<h3 class="text-[#222325] text-2xl font-bold md:text[64px]">
+						Koleksi Video <br class="md:hidden" />Pembelajaran Unggulan
+					</h3>
+					<p class="text-[14px] text-[#333333AD]">
+						Jelajahi Dunia Pengetahuan Melalui Pilihan Kami!
+					</p>
+				</div>
 
 				<div class="my-6 overflow-hidden">
 					<ul class="flex gap-8">
-						<li class="whitespace-nowrap text-sm text-[#F64920]"><a href="">Semua kelas</a> <div class="h-2 w-2/3 rounded-xl bg-[#F64920] mt-4"></div></li>
-						<li class="whitespace-nowrap text-sm text-[#333333AD]"><a href="">Pemasaran</a></li>
-						<li class="whitespace-nowrap text-sm text-[#333333AD]"><a href="">Desain</a></li>
-						<li class="whitespace-nowrap text-sm text-[#333333AD]"><a href="">Pengemabangan Diri</a></li>
-						<li class="whitespace-nowrap text-sm text-[#333333AD]"><a href="">Bisnis</a></li>
+						<li class="whitespace-nowrap text-sm text-[#F64920]">
+							<a href="">Semua kelas</a>
+							<div class="h-2 w-2/3 rounded-xl bg-[#F64920] mt-4"></div>
+						</li>
+						<li class="whitespace-nowrap text-sm text-[#333333AD]">
+							<a href="">Pemasaran</a>
+						</li>
+						<li class="whitespace-nowrap text-sm text-[#333333AD]">
+							<a href="">Desain</a>
+						</li>
+						<li class="whitespace-nowrap text-sm text-[#333333AD]">
+							<a href="">Pengemabangan Diri</a>
+						</li>
+						<li class="whitespace-nowrap text-sm text-[#333333AD]">
+							<a href="">Bisnis</a>
+						</li>
 					</ul>
 				</div>
 
-				<div class="catalog">
+				<div class="grid grid-cols-1 md:grid-cols-3 gap-5">
 					<!-- Card 1 -->
-					<div class="card">
-						<img src="" alt="" />
-						<h3>Big 4 Auditor Financial Analyst</h3>
-						<p>
-							Mulai transformasi dengan instruktur profesional, harga terjangkau
-							dan...
-						</p>
-						<div>
-							<img src="" alt="" />
-							<span>
-								<p>Jenna Ortega</p>
-								<p>Senior Accountant di <span>Gojek</span></p>
-							</span>
+					<div class="bg-white p-4">
+						<div class="w-full h-20.75 flex gap-4">
+							<img
+								src="assets/image-1.jpg"
+								alt="image-card-1"
+								class="w-20.5 h-20.5 object-cover rounded-2xl"
+							/>
+							<div class="grid gap-1">
+								<h3 class="text-[16px] font-bold">
+									Big 4 Auditor Financial Analyst
+								</h3>
+								<p class="hidden md:block">
+									Mulai transformasi dengan instruktur profesional, harga
+									terjangkau dan...
+								</p>
+								<div class="flex items-center gap-2">
+									<img
+										src="assets/profile-1.png"
+										alt=""
+										class="w-9 h-9 rounded-xl"
+									/>
+									<span>
+										<p class="text-[14px] font-bold">Jenna Ortega</p>
+										<p class="text-[12px] text-[#333333AD]">
+											Senior Accountant
+											<span class="hidden md:block"
+												>di <span class="font-bold">Gojek</span>
+											</span>
+										</p>
+									</span>
+								</div>
+							</div>
 						</div>
-						<div>
-							<span><!-- rating icon--></span>
-							<p><!--rating value--></p>
-							<h3><!-- price--></h3>
+						<div class="flex justify-between mt-3">
+							<div class="flex gap-1">
+								<img src="assets/Rating.svg" alt="rating" class="w-22.5 h-4.5" />
+								<span>3.5(86)</span>
+							</div>
+
+							<h3 class="text-5 font-bold text-[#3ECF4C]">Rp 300K</h3>
 						</div>
 					</div>
 				</div>
